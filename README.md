@@ -1,2 +1,3 @@
 # site.knr
-Site qui regroupe mes réseaux POULOULOU
+Site qui répertorit mes comptes sur les réseaux sociaux POULOULOU.
+https://qnibru.github.io/site.knr/.
