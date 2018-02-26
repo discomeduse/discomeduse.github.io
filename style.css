@@ -1,0 +1,64 @@
+* {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 21px;
+  color: #23272A;
+  text-decoration: none;
+  background-color: #f6f6f6;
+  transition: 0.5s;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+}
+
+
+
+
+
+.Twitter:hover {color: #1da1f2;}
+.fa-twitter {color: #1da1f2; font-size: 1.5em;}
+
+.DeviantArt:hover {color: #05cc47;}
+.fa-deviantart {color: #05cc47;}
+
+.YouTube:hover {color: #ff0000}
+.fa-youtube {color: #ff0000;}
+
+.fa-discord {color: #7289DA;}
+
+.fa-heart {color: #e0245e;}
+
+
+
+
+/*
+Twitter: #1da1f2
+CuriousCat: #c17000
+DeviantArt:#05cc47
+YouTube: #ff0000
+Discord: #7289DA
+Reddit:
+Steam:
+GitHub:
+*/
+
+
+/*
+Roboto:100,300,400
+Raleway:200,300,400
+Montserrat:300,400,500
+*/
