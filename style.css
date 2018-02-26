@@ -1,11 +1,12 @@
 * {
-  font-family: Montserrat;
+  font-family: Source Sans Pro;
   font-weight: 300;
   font-size: 21px;
   color: #23272A;
   text-decoration: none;
   background-color: #f6f6f6;
   transition: 0.5s;
+  text-transform:full-width;
 }
 
 
@@ -23,8 +24,14 @@ body {
 }
 
 
+.box2 {
+  font-size: 15px;
 }
 
+::selection {
+  background-color: #23272A;
+  color: #f6f6f6;
+}
 
 
 
@@ -35,12 +42,25 @@ body {
 .DeviantArt:hover {color: #05cc47;}
 .fa-deviantart {color: #05cc47;}
 
-.YouTube:hover {color: #ff0000}
+.YouTube:hover {color: #ff0000;}
 .fa-youtube {color: #ff0000;}
 
+.Discord:hover {color: #7289DA;}
 .fa-discord {color: #7289DA;}
 
-.fa-heart {color: #e0245e;}
+.Reddit:hover {color: #ff4500;}
+.fa-reddit-alien {color: #ff4500;}
+
+.Steam:hover {color: #171a21;}
+.fa-steam {color: #171a21;}
+
+.GitHub {color: #24292e;}
+.fa-github {color: #24292e;}
+
+.fa-bolt:hover {color: #4acaa8;}
+.fa-bolt {font-size: 15px;}
+
+.git {color: #e0245e; font-size: 15px;}
 
 
 
@@ -51,9 +71,9 @@ CuriousCat: #c17000
 DeviantArt:#05cc47
 YouTube: #ff0000
 Discord: #7289DA
-Reddit:
-Steam:
-GitHub:
+Reddit: #ff4500
+Steam: #171a21
+GitHub: #24292e
 */
 
 
