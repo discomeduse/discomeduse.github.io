@@ -1,69 +1,169 @@
 * {
-  font-family: Source Sans Pro;
-  font-weight: 300;
-  font-size: 21px;
-  color: #23272A;
+  font-family: Alegreya Sans;
+  font-weight: 100;
+  font-size: 35px;
+  color: #FFF;
   text-decoration: none;
-  background-color: #f6f6f6;
-  transition: 0.5s;
-  text-transform:full-width;
-}
-
-
-body {
-  margin: 0;
-  padding: 0;
+  background-color: #212121;
+  transition: 0.7s;
+  line-height: 1em;
+  margin:auto;
 }
 
 
 .box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
 
-.box2 {
+.powered {
   font-size: 15px;
+  align-items: center;
+  text-align: center;
+  /*border: solid 5px #000;*/
 }
 
 ::selection {
-  background-color: #23272A;
+  background-color: #3ba49f;
   color: #f6f6f6;
+}
+
+.Titre {
+  font-family: Bungee Outline;
+  font-size: 112px;
 }
 
 
 
 
 .Twitter:hover {color: #1da1f2;}
-.fa-twitter {color: #1da1f2; font-size: 1.5em;}
+.fa-twitter:hover {color: #1da1f2;}
+
+.CuriousCat:hover {color: #c17000;}
 
 .DeviantArt:hover {color: #05cc47;}
-.fa-deviantart {color: #05cc47;}
+.fa-deviantart:hover {color: #05cc47;}
 
 .YouTube:hover {color: #ff0000;}
-.fa-youtube {color: #ff0000;}
+.fa-youtube:hover {color: #ff0000;}
+.fa-youtube {font-size: 0.7em;}
 
 .Discord:hover {color: #7289DA;}
-.fa-discord {color: #7289DA;}
+.fa-discord:hover {color: #7289DA;}
 
 .Reddit:hover {color: #ff4500;}
-.fa-reddit-alien {color: #ff4500;}
+.fa-reddit-alien:hover {color: #ff4500;}
 
 .Steam:hover {color: #171a21;}
-.fa-steam {color: #171a21;}
+.fa-steam:hover {color: #171a21;}
 
-.GitHub {color: #24292e;}
-.fa-github {color: #24292e;}
+.GitHub:hover {color: #24292e;}
+.fa-github:hover {color: #24292e;}
 
-.fa-bolt:hover {color: #4acaa8;}
+
+
+.fa-bolt:hover {color: #3ba49f;}
 .fa-bolt {font-size: 15px;}
 
-.git {color: #e0245e; font-size: 15px;}
+#git {color: #e0245e; font-size: 10px;}
 
 
 
+/*EXEMPLE DU BORDEL*/
+
+.rsx .megacool:hover {
+  color: #000;
+}
+
+
+/*FIN DU BORDEL*/
+
+
+/*
+Ok alors j'ai un petit soucis que je n'arrive pas à régler. En gros, je souhaite que lorsque que l'on survole une icone, il change de couleur (donc avec :hover) et que un autre texte change aussi de couleur (et vice versa si c'est le texte qui est survolé.) Le problème c'est qu'il y a un lien entre ces deux là, et quand je le survole lui, l'icone et son texte changent de couleur (ce que je veux éviter quoi). J'ai essayé des trucs  avec :not() mais je sais plus quoi faire.
+html :
+```<span class="rsx">
+  <span class="icon">'icone'</span>
+  <span class="lien"> 'lien'</span>
+  <span class="nom">'Nom réseau'</span>
+</span>```
+
+css (ce que j'ai tenté pour l'instant):
+```.rsx:hover .icon {
+  color: #000;
+}
+
+.rsx:hover .nom {
+  color: #000;
+}
+```
+*/
+
+
+
+
+
+
+
+.Titre {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow:
+  0 0 10px #26c6da,
+  0 0 20px #26c6da,
+  0 0 30px #26c6da,
+  0 0 40px #26c6da,
+  0 0 70px #26c6da,
+  0 0 80px #26c6da,
+  0 0 100px #26c6da;
+
+}
+
+.Titre:hover {
+  text-shadow:
+  0 0 10px #ffff00,
+  0 0 20px #ffff00,
+  0 0 30px #ffff00,
+  0 0 40px #ffff00,
+  0 0 70px #ffff00,
+  0 0 80px #ffff00,
+  0 0 100px #ffff00;
+
+
+}
+
+/* COULEURS :
+Rouge : #f44336
+Rose : #e91e63
+Violet : #e040fb
+Violet 2 : #d500f9
+Violet 3 : #6200ea
+Bleu #2196f3
+Bleu 2 : #42a5f5
+Bleu 3 : #536dfe
+Cyan : #26c6da
+Cyan 2 : #18ffff
+Lime : #c6ff00
+Vert : #76ff03
+Vert 2 : #69f0ae
+Jaune : #ffff00
+Orange : #ff9100
+Orange 2 : #ff3d00
+*/
 
 /*
 Twitter: #1da1f2
@@ -74,11 +174,4 @@ Discord: #7289DA
 Reddit: #ff4500
 Steam: #171a21
 GitHub: #24292e
-*/
-
-
-/*
-Roboto:100,300,400
-Raleway:200,300,400
-Montserrat:300,400,500
 */
