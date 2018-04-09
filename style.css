@@ -8,6 +8,7 @@
   transition: 0.7s;
   line-height: 1em;
   margin:auto;
+  letter-spacing: 0.05em;
 }
 
 
@@ -67,9 +68,10 @@
 
 
 .fa-bolt:hover {color: #3ba49f;}
-.fa-bolt {font-size: 15px;}
+.fa-bolt {font-size: 1em;}
 
-#git {color: #e0245e; font-size: 10px;}
+#git:hover {color: #3ba49f;}
+#git {color : #FFFFFF; font-size: 1em;}
 
 
 
