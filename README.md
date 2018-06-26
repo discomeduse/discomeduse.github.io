@@ -1,3 +1,3 @@
-# nibruuu.github.io
+# qnibru.github.io
 Site qui regroupe mes réseaux POULOULOU
-https://nibruuu.github.io/
+https://qnibru.github.io/
