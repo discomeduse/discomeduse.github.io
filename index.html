@@ -17,14 +17,32 @@
   <div id='stars2'></div>
   <div id='stars3'></div>
 
+  <audio src="sexe.mp3" autoplay>  </audio>
 
   <script src="hover.js">éwoué</script>
+  <script type="text/javascript">
+	var msgArr = new Array();
+	msgArr[0] = "j'ai envie de perdre du poids, mais je n'aime pas perdre";
+	msgArr[1] = "site beaucoup plus meilleur que celui de flygoow bouuuh";
+	msgArr[2] = "paweurède baille guiteub"
+  msgArr[3] = "oui, je suis une légende et oui je garde mes chaussettes pendant le sexe"
+  msgArr[4] = "l'alphabet commence par ABC, les chiffres par 123, et l'amour par TOI et MOI"
+  msgArr[5] = "ok bye"
+  msgArr[6] = "Le caca accélère. Pour toujours."
+  msgArr[7] = "Bref, j'ai essayé de devenir une racaille"
+  msgArr[8] = "nique ta mère bou en poudre"
+  msgArr[9] = "Baby Kata - Pipi Caca - Tous droits réservés - Toilette Records 2012"
+
+	window.onload = function () {
+		document.getElementById("msgDiv").innerHTML = msgArr[Math.floor(Math.random()*msgArr.length)];
+	}
+</script>
 
     <div class="boxcontainer">
       <div class="box">
 
         <div class="boxtitle">
-          <p><span class="saluc">salu c </span>
+          <p><span class="saluc">mon nom est </span>
           <span class="qnibru"> qnibru</span>
           <span class="point">.</span></p>
         </div>
@@ -41,9 +59,7 @@
       		</ul>
         </div>
 
-        <div class="boxpowered">
-        j'ai envie de perdre du poids, mais je n'aime pas perdre
-        </div>
+        <div id="msgDiv"></div>
 
     </div>
 
