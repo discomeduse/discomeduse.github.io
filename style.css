@@ -1,115 +1,67 @@
-@font-face {
-  font-family: Typold;
-  src: url("fonts/Typold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: Airfly;
-  src: url("fonts/Airfly.otf")format("opentype");
-}
-
-@font-face {
-  font-family: Mont;
-  src: url("fonts/Mont.otf")format("opentype");
-}
-
-
-.saluc {font-family: Mont;
-        font-size: 3.2em;
-        color: #F5F5F5;}
-
-.qnibru {font-family: Mont;
-        font-size: 3.2em;
-        color: #F5F5F5;}
-
-.point {font-family: Airfly;
-        font-size: 3.2em;
-        color: #F5F5F5;}
-
-* {
-    text-decoration : None;
-}
-
+/*Random things*/
 html {
-  height:100%;
-  background-image: -webkit-linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-  background-image: -moz-linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-  background-image: -o-linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-  overflow: hidden;
-}
+  background-color: #121316;
+  overflow: hidden;}
 
-body {
-  font-family: Typold;
-  font-weight: 100;
-  font-size: 35px;
-  color: #F5F5F5;
-  text-decoration: none;
-  line-height: 1em;
-  margin:auto;
-  letter-spacing: 0.05em;
-  line-height: 1.5em;
-}
+::selection {
+    color: rgba(255, 255, 255, 50);}
 
-.separator {
-  color: rgba(0,0,0, .0)
-}
+ul {
+  list-style: none;}
+/*Random things*/
 
-/* Tout un bordel de box*/
+
+
+
+
+/*Box*/
 .boxcontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-top: 0.1em;
-}
+  /*border: 5px solid #ff0000;*/}
 
-.box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.boxlist {
+/*Titre*/
+.boxtitle {
+  /*border: 3px solid #05cc47;*/}
+
+.saluc {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 6em;
+  color: #F9E1D5;}
+
+.qnibru {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 6em;
+  color: #F9E1D5;}
+
+.point {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 6em;
+  color: #F9E1D5;}
+/*Titre*/
+
+
+
+
+
+
+/*Links*/
+.boxmain {
   text-align:left;
+  line-height: 2em;
+  /*border: 3px solid #6d2a88;*/
 }
 
-#msgDiv {
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-::selection {
-  background-color: rgba(0, 0, 0, .100);
-  color: inherit;
-}
-
-ul {list-style-type: none;}
-
-a:not(:hover) {color : #fff}
-
-.ColorTwitter {color: #1da1f2;}
-.fab fa-twitter:hover {color: #1da1f2}
-.ColorDiscord {color: #7289DA;}
-.ColorReddit {color: #ff4500;}
-.ColorYouTube {color: #ff0000;}
-.ColorDeviantArt {color: #05cc47;}
-.ColorSteam {color: #144a7d;}
-.ColorGitHub {color: #6d2a88;}
-
-/*#copy {color: rgba(0,0,0, .0)}
-#copy:hover {color: #FFF}*/
-
-#git {color : #ffffff;}
-#git:hover {color: #6d2a88;}
-
-/*
-Couleurs sa mère:
+/*Couleurs sa mère:
 
 Twitter: #1da1f2
 Discord: #7289DA
@@ -117,5 +69,75 @@ Reddit: #ff4500
 YouTube: #ff0000
 DeviantArt: #05cc47
 Steam: #144a7d
-GitHub: #6e5494
-*/
+GitHub: #6e5494*/
+
+
+@media (max-width: 700px) {
+ .main__list_item {
+  margin-bottom:5px
+ }
+}
+.main__list_link {
+ display:inline-block;
+ position:relative;
+ text-decoration:none;
+ transition:transform 0.3s cubic-bezier(0.53, 0.06, 0, 1.53)
+}
+/* permet la ligne*/
+.main__list_link:before {
+ content:"";
+ position:absolute;
+ left:0;
+ right:0;
+ bottom:0;
+ top:0;
+ height:3px;
+ margin:auto;
+ transform:translateX(-10%) scaleX(0);
+ background-color: #F9E1D5;
+ transform-origin:left center;
+ transition:transform 0.3s cubic-bezier(0.56, 0.07, 0.04, 1.01)
+}
+.main__list_link:hover {
+ transform:translateX(0.5em)
+}
+.main__list_link:hover:before {
+ transform:translateX(-5%) scaleX(1.3)
+}
+/*font*/
+.main__list_link_text {
+ position:relative;
+ letter-spacing:2.4px;
+ color:#F9E1D5;
+ font-size:2.1em;
+ font-family:'Playfair Display';
+ background-color: #121316;
+}
+@media (max-width: 700px) {
+ .main__list_link_text {
+  font-size:17px;
+  letter-spacing:1.4px
+ }
+}
+
+
+
+
+
+
+
+
+
+ /*Footer*/
+.boxfooter {
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  text-align: center;
+  /*border: solid 3px #ffff00;*/
+  font-family: Playfair Display;
+  font-style: italic;
+  color: #F9E1D5;
+  font-size: 1em;
+
+}
