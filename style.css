@@ -7,7 +7,7 @@ html {
     color: rgba(255, 255, 255, 50);}
 
 ul {
-  list-style: none;}
+  list-style: none;}  
 /*Random things*/
 
 
@@ -16,48 +16,38 @@ ul {
 
 /*Box*/
 .boxcontainer {
+  position: absolute;
+  z-index: 8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   /*border: 5px solid #ff0000;*/}
 
 
 /*Titre*/
 .boxtitle {
-  /*border: 3px solid #05cc47;*/}
+  margin-bottom: 20px;
+}
 
-.saluc {
+.title {
   font-family: Playfair Display;
   font-weight: 700;
   font-size: 6em;
-  color: #F9E1D5;}
-
-.qnibru {
-  font-family: Playfair Display;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 6em;
-  color: #F9E1D5;}
-
-.point {
-  font-family: Playfair Display;
-  font-weight: 700;
-  font-size: 6em;
-  color: #F9E1D5;}
+  color: #ffdfcf;}
 /*Titre*/
-
-
-
-
-
 
 /*Links*/
 .boxmain {
   text-align:left;
   line-height: 2em;
-  /*border: 3px solid #6d2a88;*/
+  margin-bottom: 30px;
+
 }
 
 
@@ -94,7 +84,7 @@ GitHub: #6e5494*/
  height:3px;
  margin:auto;
  transform:translateX(-10%) scaleX(0);
- background-color: #F9E1D5;
+ background-color: #ffdfcf;
  transform-origin:left center;
  transition:transform 0.3s cubic-bezier(0.56, 0.07, 0.04, 1.01)
 }
@@ -108,7 +98,7 @@ GitHub: #6e5494*/
 .main__list_link_text {
  position:relative;
  letter-spacing:2.4px;
- color:#F9E1D5;
+ color:#ffdfcf;
  font-size:2.1em;
  font-family:'Playfair Display';
  background-color: #121316;
@@ -122,22 +112,17 @@ GitHub: #6e5494*/
 
 
 
-
-
-
-
-
-
  /*Footer*/
 .boxfooter {
   display: flex;
   justify-content: center;
   align-items: bottom;
   text-align: center;
-  /*border: solid 3px #ffff00;*/
   font-family: Playfair Display;
-  font-style: italic;
-  color: #F9E1D5;
+  color: #ffdfcf;
   font-size: 1em;
+}
 
+.moon {
+  fill : #ffdfcf
 }
