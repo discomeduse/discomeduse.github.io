@@ -1,53 +1,63 @@
 /*Random things*/
+
 html {
-  background-color: #121316;
-  overflow: hidden;}
+    background-color: #121316;
+    overflow: hidden;
+}
 
 ::selection {
-    color: rgba(255, 255, 255, 50);}
+    color: rgba(255, 255, 255, 50);
+}
 
 ul {
-  list-style: none;}  
+    list-style: none;
+}
+
+
 /*Random things*/
 
 
-
-
-
 /*Box*/
+
 .boxcontainer {
-  position: absolute;
-  z-index: 8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  /*border: 5px solid #ff0000;*/}
+    position: absolute;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    /*border: 5px solid #ff0000;*/
+}
 
 
 /*Titre*/
+
 .boxtitle {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .title {
-  font-family: Playfair Display;
-  font-weight: 700;
-  font-size: 6em;
-  color: #ffdfcf;}
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 6em;
+    color: #ffdfcf;
+}
+
+
 /*Titre*/
 
-/*Links*/
-.boxmain {
-  text-align:left;
-  line-height: 2em;
-  margin-bottom: 30px;
 
+/*Links*/
+
+.boxmain {
+    text-align: left;
+    line-height: 2em;
+    margin-bottom: 30px;
 }
 
 
@@ -61,72 +71,81 @@ DeviantArt: #05cc47
 Steam: #144a7d
 GitHub: #6e5494*/
 
-
 @media (max-width: 700px) {
- .main__list_item {
-  margin-bottom:5px
- }
+    .main__list_item {
+        margin-bottom: 5px
+    }
 }
+
 .main__list_link {
- display:inline-block;
- position:relative;
- text-decoration:none;
- transition:transform 0.3s cubic-bezier(0.53, 0.06, 0, 1.53)
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    transition: transform 0.3s cubic-bezier(0.53, 0.06, 0, 1.53)
 }
+
+
 /* permet la ligne*/
+
 .main__list_link:before {
- content:"";
- position:absolute;
- left:0;
- right:0;
- bottom:0;
- top:0;
- height:3px;
- margin:auto;
- transform:translateX(-10%) scaleX(0);
- background-color: #ffdfcf;
- transform-origin:left center;
- transition:transform 0.3s cubic-bezier(0.56, 0.07, 0.04, 1.01)
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 3px;
+    margin: auto;
+    transform: translateX(-10%) scaleX(0);
+    background-color: #ffdfcf;
+    transform-origin: left center;
+    transition: transform 0.3s cubic-bezier(0.56, 0.07, 0.04, 1.01)
 }
+
 .main__list_link:hover {
- transform:translateX(0.5em)
+    transform: translateX(0.5em)
 }
+
 .main__list_link:hover:before {
- transform:translateX(-5%) scaleX(1.3)
+    transform: translateX(-5%) scaleX(1.3)
 }
+
+
 /*font*/
+
 .main__list_link_text {
- position:relative;
- letter-spacing:2.4px;
- color:#ffdfcf;
- font-size:2.1em;
- font-family:'Playfair Display';
- background-color: #121316;
+    position: relative;
+    letter-spacing: 2.4px;
+    color: #ffdfcf;
+    font-size: 2.1em;
+    font-family: 'Playfair Display';
+    background-color: #121316;
 }
+
 @media (max-width: 700px) {
- .main__list_link_text {
-  font-size:17px;
-  letter-spacing:1.4px
- }
+    .main__list_link_text {
+        font-size: 17px;
+        letter-spacing: 1.4px
+    }
 }
 
 
+/*Footer*/
 
- /*Footer*/
 .boxfooter {
-  display: flex;
-  justify-content: center;
-  align-items: bottom;
-  text-align: center;
-  font-family: Playfair Display;
-  color: #ffdfcf;
-  font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    text-align: center;
+    font-family: Playfair Display;
+    color: #ffdfcf;
+    font-size: 1em;
 }
 
 .moon {
-  fill : #ffdfcf
+    fill: #ffdfcf
 }
 
 a:visited {
-  fill : #ffdfcf
+    fill: #ffdfcf
 }
